@@ -1,8 +1,12 @@
 import pygame
-from pygame.examples.sprite_texture import running
-
 pygame.init()
 
+
+screen = pygame.display.set_mode((800, 600))
+pygame.display.set_caption('Tir')
+icon = pygame.image.load('icon.png')
+pygame.display.set_icon(icon)
+py
 
 running = True
 while running:
