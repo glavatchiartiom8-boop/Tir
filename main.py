@@ -5,7 +5,7 @@ pygame.init()
 
 screen = pygame.display.set_mode((800, 600))
 pygame.display.set_caption('Tir')
-icon = pygame.image.load('icon.png')
+icon = pygame.image.load('tir.png')
 pygame.display.set_icon(icon)
 target_img = pygame.image.load('target-sport.jpg')
 target_width = 80
@@ -20,5 +20,7 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
+
+    screen.blit(target_img, (target_x, target_y))
 
 pygame.quit()
